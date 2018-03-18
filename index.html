@@ -19,13 +19,13 @@
 
   <form action="index.html" method="post">
     <fieldset>
-      <h2>Contact Information</h2>
+      <legend>Contact Information</legend>
 
     <div id="container" class="clearfix">
       <label for="fname-whole-width">Full Name</label>
-      <input type="text" placeholder="Required" name="name" id="fname-whole-width" class="whole-width"><br>
+      <input type="text" placeholder="Required" name="name" id="fname-whole-width" class="whole-width" required><br>
       <label for="email-whole-width">Email Address</label>
-      <input type="text" name="email" placeholder="Required" id="email-whole-width"><br>
+      <input type="text" name="email" placeholder="Required" id="email-whole-width" required><br>
       <label for="pnumber-whole-width">Phone Number</label>
       <input type="text" name="pnumber" id="pnumber-whole-width"><br>
       <label for="street-whole-width" >Street Address</label>
@@ -92,7 +92,7 @@
     </fieldset>
 
     <fieldset>
-      <h2>Newsletter</h2>
+      <legend>Newsletter</legend>
       <p>Select the newsletters you would like to receive</p>
       <div id="checkbox">
         <input type="checkbox" name="receive" id="htmlnews"><label for="htmlnews">HTML News</label><br>
@@ -107,7 +107,7 @@
         <textarea name="comment" placeholder="We would love to hear your thoughts" id="comments">We would love to hear your thoughts</textarea>
       </div>
       <footer>
-         <button type="button">Sign Up</button>
+         <input type="submit">Sign Up</button>
          <p class="copyright">Copyright The Code Review</p>
       </footer>
     </fieldset>
