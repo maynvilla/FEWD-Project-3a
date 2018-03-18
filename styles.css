@@ -36,7 +36,8 @@ fieldset {
   padding-bottom: 25px;
 }
 
-h2 {
+h2,
+legend {
   font-size: 18px;
   font-family: 'Julius Sans One', sans-serif;
 }
@@ -61,7 +62,7 @@ textarea {
   font-size: 1em;
   }
 
-button {
+#button input[type:submit] {
   border: none;
   margin-top: 50px;
   padding: 5px;
@@ -72,7 +73,7 @@ button {
   background: linear-gradient(pink, purple);
   transition: 0.3s;
   }
-button:focus {
+#button:focus {
   background: linear-gradient(#52b2b3, pink);
   border: 1px solid pink;
   letter-spacing: 2px;
