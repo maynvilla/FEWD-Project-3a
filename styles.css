@@ -15,7 +15,7 @@ body {
 }
 
 form {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.65);
   border-radius: 10px;
 }
 
@@ -34,12 +34,17 @@ fieldset {
   border: none;
   border-bottom: 2px solid black;
   padding-bottom: 25px;
+  padding-top: 25px;
 }
 
 h2,
 legend {
   font-size: 18px;
   font-family: 'Julius Sans One', sans-serif;
+}
+
+legend {
+  padding-top: 25px;
 }
 
 label {
@@ -62,7 +67,7 @@ textarea {
   font-size: 1em;
   }
 
-#button input[type:submit] {
+input[type=submit] {
   border: none;
   margin-top: 50px;
   padding: 5px;
@@ -71,15 +76,17 @@ textarea {
   text-align: center;
   font-size: 1.2em;
   background: linear-gradient(pink, purple);
-  transition: 0.3s;
+  transition: 0.4s;
   }
-#button:focus {
+input[type=submit]:hover {
   background: linear-gradient(#52b2b3, pink);
   border: 1px solid pink;
   letter-spacing: 2px;
   color: black;
   outline: none;
+  cursor: pointer;
 }
+
 option, select {
   font-family: 'Bad Script', cursive;
 }
@@ -90,14 +97,14 @@ option, select {
 #street-whole-width,
 #email-whole-width,
 #states-whole-width,
-textarea, button {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 10px 0;
-    display: block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: rgba(255, 255, 255, 0.4)
+textarea, #button {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.3)
 }
 #zip {
   width: 50%;
@@ -107,7 +114,7 @@ textarea, button {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  background-color: rgba(255, 255, 255, 0.7)
+  background-color: rgba(255, 255, 255, 0.3)
 }
 #zip, #fname-whole-width,
 #city-whole-width,
@@ -176,13 +183,13 @@ label {
 
     #zip {
       width: 25%;
-      padding: 12px 60px;
+      padding: 12px 20px;
       margin: 12px 0;
       display: block;
       border: 1px solid #ccc;
       border-radius: 4px;
       box-sizing: border-box;
-      background-color: rgba(255, 255, 255, 0.4)
+      background-color: rgba(255, 255, 255, 0.3)
     }
 
       .clearfix::after {
