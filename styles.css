@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f6ede5;
+  text-align: left;
+  background-image: url(images/bonnie-kittle-180056-unsplash.png);
+  margin: 0 auto;
+  color:  #180D01;
+  font-family: 'Julius Sans One', sans-serif;
+  width: 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 24px;
+  text-align: center;
+  font-family: 'Bad Script', cursive;
+  color: white;
+}
+#signup {
+  text-align: center;
+  color: white;
+  }
+
+fieldset {
+  border: none;
+  border-bottom: 2px solid black;
+  padding-bottom: 25px;
+}
+
+h2 {
+  font-size: 18px;
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+}
+p {
+  font-family: 'Bad Script', cursive;
+  font-size: 1em;
+}
+
+input::placeholder {
+  font-size: 1em;
+  text-align: right;
+  font-family: 'Bad Script', cursive;
+}
+
+textarea {
+  font-family: 'Bad Script', cursive;
+  font-size: 1em;
+  }
+
+button {
+  border: none;
+  margin-top: 50px;
+  padding: 5px;
+  font-family: 'Bad Script', cursive;
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
+  background: linear-gradient(pink, purple);
+  transition: 0.3s;
+  }
+button:focus {
+  background: linear-gradient(#52b2b3, pink);
+  border: 1px solid pink;
+  letter-spacing: 2px;
+  color: black;
+  outline: none;
+}
+option, select {
+  font-family: 'Bad Script', cursive;
+}
+#fname-whole-width,
+#city-whole-width,
+#pnumber-whole-width,
+#fname-whole-width,
+#street-whole-width,
+#email-whole-width,
+#states-whole-width,
+textarea, button {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.4)
+}
+#zip {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.7)
+}
+#zip, #fname-whole-width,
+#city-whole-width,
+#pnumber-whole-width,
+#fname-whole-width,
+#street-whole-width,
+#email-whole-width,
+#states-whole-width,
+textarea {
+  transition: 0.3s;
+}
+#zip:focus,
+#fname-whole-width:focus,
+#city-whole-width:focus,
+#pnumber-whole-width:focus,
+#fname-whole-width:focus,
+#street-whole-width:focus,
+#email-whole-width:focus,
+#states-whole-width:focus,
+textarea:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  border: 1px solid rgba(81, 203, 238, 1);
+  background-color: rgba(255, 182, 193, 0.2);
+  outline: none;
+  border-radius: 10px;
+}
+#checkbox label,
+#radio
+label {
+  padding-left: 0.5em;
+}
+.copyright {
+  text-align: center;
+  font-size: 0.6em;
+}
+
+@media screen and (min-width: 769px) {
+    /* STYLES HERE */
+    body {
+      width: 70%;
+    }
+
+    #fname-whole-width input[type=text],
+    #city-whole-width input[type=text],
+    #pnumber-whole-width input[type=text],
+    #fname-whole-width input[type=text],
+    #street-whole-width input[type=text] ,
+    #email-whole-width input[type=text],
+    #states-whole-width input[type=select] {
+      width: 60%;
+      padding: 12px 20px;
+      margin: 5px 20px;
+      }
+
+    #container label, #fname-whole-width,
+    #city-whole-width,
+    #pnumber-whole-width,
+    #fname-whole-width,
+    #street-whole-width,
+    #email-whole-width,
+    #states-whole-width {
+      width: 40%;
+      padding: 12px 20px;
+      float: left;
+    }
+
+    #zip {
+      width: 25%;
+      padding: 12px 60px;
+      margin: 12px 0;
+      display: block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      background-color: rgba(255, 255, 255, 0.4)
+    }
+
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+        }
+      }
